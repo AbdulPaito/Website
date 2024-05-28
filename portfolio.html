@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<head>
+    <title>Gaming Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap');
+        
+        body, html {
+            width: 100%;
+            height: 100%;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar-brand {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 2em;
+        }
+        
+        .navbar-toggle:before {
+            content: "Menu";
+            left: -50px;
+            top: 6px;
+            position: absolute;
+            width: 50px;
+            color: #fff;
+        }
+        
+        body {
+            padding-top: 50px;
+        }
+        
+        .home-body {
+            padding-top: 25vh;
+            background: url('https://i.imgur.com/KvNSWeb.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            color: white;
+            text-align: center;
+        }
+        
+        .home-body h1, .home-body h2 {
+            font-family: 'Press Start 2P', cursive;
+        }
+        
+        h1 {
+            color: #FFEB3B;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+            font-size: 4em;
+        }
+        
+        h2 {
+            color: #FFC107;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        
+        hr {
+            width: 80%;
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+        }
+        
+        .btn {
+            background-color: transparent;
+            color: #fff;
+            margin: 0 3px;
+            border: 2px solid white;
+        }
+        
+        .fa {
+            margin-right: 8px;
+        }
+        
+        #about-full, #portfolio-full, #contact-full {
+            padding: 50px 0;
+            background-color: #333;
+            color: white;
+        }
+        
+        .projectSquare {
+            background-color: black;
+            border: 2px solid #FFEB3B;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            height: 200px; 
+        }
+        
+        .projectSquare img {
+            max-width: 120%;
+            max-height: 100%;
+            display: block; 
+        }
+        
+        #portrait {
+            width: 80%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div class="container-fluid">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#a-home">Abdul Paito</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#a-home">Home</a></li>
+                        <li><a href="#a-about">About</a></li>
+                        <li><a href="#a-portfolio">Account</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <a name="home" id="a-home"></a>
+    <div class="home-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Gaming Portfolio</h1>
+                    <h2>Mobile Legends Gamer • CODM Player • Other Games</h2>
+                    <hr />
+                    <div id="arrowToAbout">
+                        <a class="fa-stack fa-lg" href="#a-about">
+                            <i class="fa fa-circle-thin fa-stack-2x"></i>
+                            <i class="fa fa-arrow-down fa-stack-1x fa-inverse"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <a name="about" id="a-about"></a>
+    <div id="about-full">
+      <div class="container">
+        <div class="row" id="about-body">
+            <div class="col-md-6 text-center">
+                <img src="image0.jpg" alt="Portrait" id="portrait" class="img-circle img-responsive" />
+            </div>
+            <div class="col-md-6">
+                <h2>About Me</h2>
+                <h4>I am passionate about the world of gaming and its potential for storytelling and immersive experiences. My love for gaming extends beyond just playing; I find myself drawn to the intricacies of game design and the art of creating captivating virtual worlds.</h4>
+            </div>
+        </div>
+        <div class="row text-center" id="arrowToPortfolio">
+            <a class="fa-stack fa-lg" href="#a-portfolio">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-arrow-down fa-stack-1x fa-inverse"></i>
+            </a>
+        </div>
+    </div>
+    </div>
+    
+    <a name="portfolio" id="a-portfolio"></a>
+    <div id="portfolio-full">
+        <div class="container text-center">
+            <div class="row" id="portfolio-body">
+                <div class="col-md-12">
+                    <h2>Take a look at my Account</h2>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 col-md-4">
+                      <div class="projectSquare">
+                          <img src="image1.jpg" alt="Image 1" class="img-responsive">
+                      </div>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                      <div class="projectSquare">
+                          <img src="image2.jpg" alt="Image 2" class="img-responsive">
+                      </div>
+                  </div>
+                  <div class="col-xs-12 col-md-4">
+                      <div class="projectSquare">
+                          <img src="image3.jpg" alt="Image 3" class="img-responsive">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <a name="contact" id="a-contact"></a>
+  <div id="contact-full">
+      <div class="container">
+          <div class="row" id="contact-body">
+              <div class="col-lg-12 text-center">
+                  <hr />
+                  <p>&copy; 2023 GamerX. All rights reserved.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
